@@ -6,7 +6,7 @@ class Lesson1
 
   def age(birthday)
     today = DateTime.now
-    bday = Date.new(birthday)
+    bday = Date.parse(birthday)
     days_from = (today - bday).to_i
     seconds = (days_from*24*60*60).to_i
     minutes = seconds / 60
